@@ -1,5 +1,6 @@
 class FoodsController < ApplicationController
   before_action :set_food, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :add_restaurant]
 
   # GET /foods
   def index
@@ -38,7 +39,7 @@ class FoodsController < ApplicationController
     @food.destroy
   end
   # PUT / restaurants/1/foods/2
-  
+
   def add_restaurant
     @food = Food.find(params[:id])
     @restaurant = Restaurant.find(params[:restaurant_id])
