@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <h1>Munch Madness</h1>
       <Link>Login/Register</Link>
-    </div>
+    </header>
   )
 }
