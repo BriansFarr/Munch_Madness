@@ -37,7 +37,8 @@ class FoodsController < ApplicationController
   def destroy
     @food.destroy
   end
-
+  # PUT / restaurants/1/foods/2
+  
   def add_restaurant
     @food = Food.find(params[:id])
     @restaurant = Restaurant.find(params[:restaurant_id])

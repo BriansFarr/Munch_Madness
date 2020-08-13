@@ -33,6 +33,6 @@ puts "#{Food.count} foods created"
 @chickfil = Restaurant.create(name: 'Chick Fil A')
 @dairyq = Restaurant.create(name: 'Dairy Queen')
 
-puts "#{Restaurant.count} restaurants created"
+puts "#{Restaurant.count} created"
 
 @nuggets.restaurants.push(@mcdon)
