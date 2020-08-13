@@ -5,3 +5,34 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Restaurant.destroy_all
+Food.destroy_all
+User.destroy_all
+
+@admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
+puts "#{User.count} users created"
+
+@nuggets = Food.create(name: 'Chicken Nuggets', review: 'mmmm.... Im loving it', user: @admin)
+puts "#{Food.count} foods created"
+
+@burgerk = Restaurant.create(name: 'Burger King')
+@mcdon = Restaurant.create(name: 'McDonalds')
+@tacob = Restaurant.create(name: 'Taco Bell')
+@kfc = Restaurant.create(name: 'Kentucky Fried Chicken')
+@wendys = Restaurant.create(name: 'Wendys')
+@innout = Restaurant.create(name: 'In N Out')
+@arbys = Restaurant.create(name: 'Arbys')
+@shakeshack = Restaurant.create(name: 'Shake Shack')
+@checkers = Restaurant.create(name: 'Checkers / Rallys')
+@whataburg = Restaurant.create(name: 'Whataburger')
+@churchs = Restaurant.create(name: 'Churchs Chicken')
+@jackinbox = Restaurant.create(name: 'Jack in the Box')
+@carlsjr = Restaurant.create(name: 'Carls Jr')
+@whitec = Restaurant.create(name: 'White Castle')
+@popeye = Restaurant.create(name: 'Popeyes')
+@chickfil = Restaurant.create(name: 'Chick Fil A')
+@dairyq = Restaurant.create(name: 'Dairy Queen')
+
+puts "#{Restaurant.count} restaurants created"
+
+@nuggets.restaurants.push(@mcdon)
