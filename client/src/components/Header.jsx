@@ -16,7 +16,9 @@ export default function Header(props) {
 
   return (
     <header>
-      <h1>Munch Madness</h1>
+      <div className= "title">
+        <h1>Munch Madness</h1>
+      </div>
       {
         props.currentUser ? (
           <>

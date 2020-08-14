@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { readOneFood, addRestaurant } from '../services/foods'
+import { destroyRestaurant} from '../services/restaurants'
 
 export default function FoodItem(props) {
   const [food, setFood] = useState(null);
@@ -27,8 +28,10 @@ export default function FoodItem(props) {
     const foodItem = await addRestaurant(restaurantId, food.id);
     setFood(foodItem);
   }
-  const handleDelete = async (e) => {
-    
+
+
+  const handleClick = async (e) => {
+    await destroyRestaurant();
     
   }
 
@@ -48,9 +51,9 @@ export default function FoodItem(props) {
           
               food.restaurants.map((restaurant) => (
                 <div>
-                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image}width={500} height={300} mode='fit'></img></p>
+                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image} width={500} height={300} mode='fit'></img></p>
                   
-                  <button onCLick={handleDelete}>Delete</button>
+                  <button onCLick={handleClick}>Delete</button>
                 </div>
               ))
             }
@@ -65,7 +68,7 @@ export default function FoodItem(props) {
                   <option value={restaurant.id}>{restaurant.name}</option>
                 ))}
               </select>
-              <button>Add</button>
+              <button onClick>Add</button>
             </form>
           </>
         )
