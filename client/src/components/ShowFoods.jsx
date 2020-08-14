@@ -17,11 +17,15 @@ export default function ShowFoods(props) {
       {props.foods.map((foodItem) => (
         <>
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
+          <img src={foodItem.image}></img>
+          <br/>
           <Link to={`/foods/${foodItem.id}/edit`}><button>edit</button></Link>
+          <br/>
           <button onClick={() => handleClick(foodItem.id)}>delete</button>
           <br />
         </>
       ))}
+      <br/>
       <Link to='/foods/new'><button>Create</button></Link>
     </div>
   )
