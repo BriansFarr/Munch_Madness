@@ -8,6 +8,7 @@ export default function ShowRestaurants(props) {
         <>
         <p>{restaurant.name}</p>
           <img src={restaurant.image} width={500} height={300} mode='fit'></img>
+          
           </>
       ))}
     </div>
