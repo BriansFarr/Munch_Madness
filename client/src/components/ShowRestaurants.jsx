@@ -7,7 +7,7 @@ export default function ShowRestaurants(props) {
       {props.restaurants.map((restaurant) => (
         <>
         <p>{restaurant.name}</p>
-          <img src={restaurant.image}></img>
+          <img src={restaurant.image} width={500} height={300} mode='fit'></img>
           </>
       ))}
     </div>

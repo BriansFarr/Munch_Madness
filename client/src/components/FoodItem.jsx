@@ -40,15 +40,16 @@ export default function FoodItem(props) {
             <header>Food:</header>
             <h2>{food.name}</h2>
             {food.review && 
-              <p> Review: {food.review}</p>}
+              <p> Review: "{food.review}"</p>}
             {food.image && 
               <img src={food.image}></img>}
-            <h2>Add a restaurant</h2>
+            <h2>Select the restaurant with the best {food.name}:</h2>
             {food.restaurants &&
           
               food.restaurants.map((restaurant) => (
                 <div>
-                  <p key={restaurant.id}>{restaurant.name}</p>
+                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image}width={500} height={300} mode='fit'></img></p>
+                  
                   <button onCLick={handleDelete}>Delete</button>
                 </div>
               ))

@@ -17,6 +17,7 @@ export default function ShowFoods(props) {
       {props.foods.map((foodItem) => (
         <>
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
+          <br/>
           <img src={foodItem.image}></img>
           <br/>
           <Link to={`/foods/${foodItem.id}/edit`}><button>edit</button></Link>
