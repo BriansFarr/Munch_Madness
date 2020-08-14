@@ -55,6 +55,7 @@ export default function CreateFood(props) {
           onChange={handleChange}
         />
       </label>
+      
         <button>Submit</button>
     </form>
   )

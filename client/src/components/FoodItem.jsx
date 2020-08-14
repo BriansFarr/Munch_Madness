@@ -37,11 +37,13 @@ export default function FoodItem(props) {
       {
         food && (
           <>
-            <h3>{food.name}</h3>
+            <header>Food:</header>
+            <h2>{food.name}</h2>
             {food.review && 
-              <p> {food.review}</p>}
+              <p> Review: {food.review}</p>}
             {food.image && 
               <img src={food.image}></img>}
+            <h2>Add a restaurant</h2>
             {food.restaurants &&
           
               food.restaurants.map((restaurant) => (
@@ -51,6 +53,8 @@ export default function FoodItem(props) {
                 </div>
               ))
             }
+
+          
               
 
             <form onSubmit={handleSubmit}>

@@ -15,8 +15,8 @@ puts "#{User.count} users created"
 @nuggets = Food.create(name: 'Chicken Nuggets', review: 'mmmm.... Im loving it', user: @admin)
 puts "#{Food.count} foods created"
 
-@burgerk = Restaurant.create(name: 'Burger King')
-@mcdon = Restaurant.create(name: 'McDonalds')
+@burgerk = Restaurant.create(name: 'Burger King', image: 'https://1000logos.net/wp-content/uploads/2016/10/Burger-King-Logo.png')
+@mcdon = Restaurant.create(name: 'McDonalds', image: 'https://1000logos.net/wp-content/uploads/2017/03/McDonalds-Logo.png')
 @tacob = Restaurant.create(name: 'Taco Bell')
 @kfc = Restaurant.create(name: 'Kentucky Fried Chicken')
 @wendys = Restaurant.create(name: 'Wendys')

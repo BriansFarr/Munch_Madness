@@ -30,7 +30,8 @@ export default function Header(props) {
       {
         props.currentUser && (
           <>
-            <Link to="/foods">Foods</Link>
+            <Link to="/foods">Foods</Link> 
+            <br/>
             <Link to="/restaurants">Restaurants</Link>
             <hr />
           </>
