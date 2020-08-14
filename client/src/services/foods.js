@@ -16,6 +16,7 @@ export const postFood = async (foodData) => {
 }
 
 export const putFood = async (id, foodData) => {
+  console.log(foodData)
   const resp = await api.put(`/foods/${id}`, { food: foodData });
   return resp.data;
 }
