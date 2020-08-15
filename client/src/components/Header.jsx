@@ -19,6 +19,8 @@ export default function Header(props) {
       <div className= "title">
         <h1>Munch Madness</h1>
       </div>
+      <hr />
+      <div className= 'user'>
       {
         props.currentUser ? (
           <>
@@ -30,10 +32,13 @@ export default function Header(props) {
            
           )
       }
-      <hr />
-      {
+        <hr />
+        </div>
+        {
         props.currentUser && (
           <>
+            <Link to='/'>Home</Link>
+            <br/>
             <Link to="/foods">Foods</Link> 
             <br/>
             <Link to="/restaurants">Restaurants</Link>

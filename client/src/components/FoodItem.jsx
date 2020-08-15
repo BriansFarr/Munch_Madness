@@ -4,7 +4,6 @@ import { destroyRestaurants} from '../services/restaurants'
 
 export default function FoodItem(props) {
   const [food, setFood] = useState(null);
-  const [review, setReview] = useState(null);
   const [restaurantId, setRestaurantId] = useState(null);
 
   useEffect(() => {

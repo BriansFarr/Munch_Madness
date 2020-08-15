@@ -5,6 +5,7 @@ import Main from './components/Main';
 import { verifyUser } from './services/auth';
 import Footer from './components/Footer'
 
+
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
 

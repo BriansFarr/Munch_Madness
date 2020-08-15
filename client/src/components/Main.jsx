@@ -80,6 +80,13 @@ export default function Main(props) {
           setFoods={setFoods}
         />
       )} />
+
+      <Route path='/' render={() => (
+        <Home
+          home={Home}
+        />
+      )} />
+      
     </main>
   )
 }

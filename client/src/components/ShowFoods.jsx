@@ -17,6 +17,9 @@ export default function ShowFoods(props) {
     <div className="container">
       <div className="edit">
       <h3>Foods</h3>
+      <div className= "create">
+        <Link to='/foods/new'><button>Create</button></Link>
+      </div>
       {props.foods.map((foodItem) => (
         <>
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
@@ -32,10 +35,6 @@ export default function ShowFoods(props) {
         
       ))}
         </div>
-      <div className= "create">
-      <br/>
-        <Link to='/foods/new'><button>Create</button></Link>
-      </div>
     </div>
   )
 }
