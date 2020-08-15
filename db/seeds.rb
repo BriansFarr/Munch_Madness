@@ -12,7 +12,7 @@ User.destroy_all
 @admin = User.create(username: 'admin', email: 'admin@email.com', password: '123456')
 puts "#{User.count} users created"
 
-@nuggets = Food.create(name: 'Chicken Nuggets', review: 'mmmm.... Im loving it', user: @admin)
+@nuggets = Food.create(name: 'Chicken Nuggets', review: 'mmmm.... Im loving it', image: 'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/9/12/1/FN_Picky-Eaters-Chicken-Nuggets_s4x3.jpg.rend.hgtvcom.616.462.suffix/1383770571120.jpeg', user: @admin)
 puts "#{Food.count} foods created"
 
 @burgerk = Restaurant.create(name: 'Burger King', image: 'https://1000logos.net/wp-content/uploads/2016/10/Burger-King-Logo.png')
@@ -27,7 +27,6 @@ puts "#{Food.count} foods created"
 @whataburg = Restaurant.create(name: 'Whataburger', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Whataburger_logo.svg/1200px-Whataburger_logo.svg.png')
 @churchs = Restaurant.create(name: 'Churchs Chicken', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Church%27s_Chicken_logo.svg/1200px-Church%27s_Chicken_logo.svg.png')
 @jackinbox = Restaurant.create(name: 'Jack in the Box', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Jack_in_the_Box_2009_logo.svg/200px-Jack_in_the_Box_2009_logo.svg.png')
-@carlsjr = Restaurant.create(name: 'Carls Jr', image: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCarl%2527s_Jr.&psig=AOvVaw3cOjFgLN5xzAB72m1Et0-E&ust=1597514345807000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCGivikm-sCFQAAAAAdAAAAABAD')
 @whitec = Restaurant.create(name: 'White Castle', image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/White_Castle_logo.svg/1200px-White_Castle_logo.svg.png')
 @popeye = Restaurant.create(name: 'Popeyes', image: 'https://w0.pngwave.com/png/547/143/popeyes-logo-graphics-fried-chicken-fried-chicken-png-clip-art.png')
 @chickfil = Restaurant.create(name: 'Chick Fil A', image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Chick-fil-A_Logo.svg/1280px-Chick-fil-A_Logo.svg.png')

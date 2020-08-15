@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { removeToken } from '../services/auth';
 import { useHistory } from 'react-router-dom';
-import '../component css/Header.css'
+import '../css/Header.css'
 
 export default function Header(props) {
   const history = useHistory();

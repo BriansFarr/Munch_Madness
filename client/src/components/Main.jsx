@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Route } from 'react-router-dom';
 import { readAllRestaurants } from '../services/restaurants';
 import { readAllFoods } from '../services/foods';
+import '../css/Main.css' 
 
 import Login from './Login';
 import Register from './Register';
@@ -10,6 +11,7 @@ import ShowFoods from './ShowFoods';
 import CreateFood from './CreateFood';
 import FoodItem from './FoodItem'
 import UpdateFood from './UpdateFood';
+import Home from './Home';
 
 export default function Main(props) {
   const { setCurrentUser } = props;
@@ -34,7 +36,7 @@ export default function Main(props) {
 
   return (
     <main>
-      
+
       <Route path='/login' render={(props) => (
         <Login
           {...props}

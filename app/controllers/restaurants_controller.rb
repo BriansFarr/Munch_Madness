@@ -7,4 +7,8 @@ class RestaurantsController < ApplicationController
     render json: @restaurants
   end
 
+  def destroyRestaurants
+    @restaurant.destroy
+  end
+
 end

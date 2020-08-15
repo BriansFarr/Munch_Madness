@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { readOneFood, addRestaurant } from '../services/foods'
-import { destroyRestaurant} from '../services/restaurants'
+import { destroyRestaurants} from '../services/restaurants'
 
 export default function FoodItem(props) {
   const [food, setFood] = useState(null);
@@ -31,7 +31,7 @@ export default function FoodItem(props) {
 
 
   const handleClick = async (e) => {
-    await destroyRestaurant();
+    await destroyRestaurants();
     
   }
 

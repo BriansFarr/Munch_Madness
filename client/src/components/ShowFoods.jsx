@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { destroyFood } from '../services/foods';
-import '../component css/Show.css'
+import '../css/Show.css'
 
 export default function ShowFoods(props) {
 
@@ -14,7 +14,8 @@ export default function ShowFoods(props) {
 
 
   return (
-    <div className="foods">
+    <div className="container">
+      <div className="edit">
       <h3>Foods</h3>
       {props.foods.map((foodItem) => (
         <>
@@ -24,12 +25,13 @@ export default function ShowFoods(props) {
           <br />
           <div className="edit">
           <Link to={`/foods/${foodItem.id}/edit`}><button>edit</button></Link>
-          <br/>
           <button onClick={() => handleClick(foodItem.id)}>delete</button>
             <br />
-            </div>
+          </div>
         </>
+        
       ))}
+        </div>
       <div className= "create">
       <br/>
         <Link to='/foods/new'><button>Create</button></Link>

@@ -5,7 +5,7 @@ export const readAllRestaurants = async () => {
   return resp.data;
 }
 
-export const destroyRestaurant = async (id) => {
+export const destroyRestaurants = async (id) => {
   const resp = await api.delete(`/restaurants/${id}`);
   return resp;
 }
