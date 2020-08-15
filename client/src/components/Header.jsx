@@ -37,7 +37,7 @@ export default function Header(props) {
         {
         props.currentUser && (
           <>
-            <Link to='/'>Home</Link>
+            <Link to='/home'>Home</Link>
             <br/>
             <Link to="/foods">Foods</Link> 
             <br/>

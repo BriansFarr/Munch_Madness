@@ -33,10 +33,15 @@ export default function Main(props) {
     const foodsList = await readAllFoods();
     setFoods(foodsList);
   }
-
+  
   return (
     <main>
 
+      <Route path='/home' render={() => (
+        <Home
+          home={Home}
+        />
+      )} />
       <Route path='/login' render={(props) => (
         <Login
           {...props}
@@ -81,11 +86,6 @@ export default function Main(props) {
         />
       )} />
 
-      <Route path='/' render={() => (
-        <Home
-          home={Home}
-        />
-      )} />
       
     </main>
   )
