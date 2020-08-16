@@ -19,33 +19,35 @@ export default function Header(props) {
       <div className= "title">
         <h1>Munch Madness</h1>
       </div>
-      <hr />
       <div className= 'user'>
       {
         props.currentUser ? (
           <>
-            <p>{props.currentUser.username}</p>
-            <button onClick={handleLogout}>Logout</button>
+              <p>{props.currentUser.username}</p>
+              <div className='button'>
+                <button onClick={handleLogout}>Logout</button>
+                </div>
           </>
         ) : (
             <Link to='/login'>Login / Sign Up</Link>
            
           )
       }
-        <hr />
-        </div>
+      </div>
+      <div className="nav">
         {
         props.currentUser && (
           <>
+          
             <Link to='/home'>Home</Link>
-            <br/>
+           
             <Link to="/foods">Foods</Link> 
-            <br/>
+       
             <Link to="/restaurants">Restaurants</Link>
-            <hr />
           </>
         )
-      }
+        }
+        </div>
     </header>
   )
 }

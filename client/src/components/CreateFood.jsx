@@ -38,7 +38,7 @@ export default function CreateFood(props) {
         />
       </label>
       <label>
-        Review
+        Review: 
         <input
           name='review'
           type="text"
@@ -47,7 +47,7 @@ export default function CreateFood(props) {
         />
       </label>
       <label>
-        Image
+        Image: 
         <input
           name='image'
           type="text"
