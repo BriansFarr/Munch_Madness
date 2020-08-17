@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { putFood } from '../services/foods'
+import "../css/Update.css"
 
 export default function UpdateFood(props) {
   const [formData, setFormData] = useState({
@@ -41,6 +42,8 @@ export default function UpdateFood(props) {
   }
 
   return (
+    <>
+    <div className="update">
     <form onSubmit={handleSubmit}>
       <h3>Edit Food</h3>
       <label>
@@ -72,6 +75,8 @@ export default function UpdateFood(props) {
         />
       </label>
       <button>Submit</button>
-    </form>
+        </form>
+        </div>
+      </>
   )
 }
