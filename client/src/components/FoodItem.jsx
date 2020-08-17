@@ -43,11 +43,11 @@ export default function FoodItem(props) {
         food && (
           <>
             <div className="foodBox">
-            <h1>Food:</h1>
-              <h2>{food.name}</h2>
+            <h2>Food:</h2>
+              <h3>{food.name}</h3>
             </div>
             <div className="reviewBox">
-              <h1>Review:</h1>
+              <h2>Review:</h2>
               {food.review && 
                 <p> "{food.review}" </p>}
               </div>

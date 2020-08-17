@@ -1,8 +1,9 @@
 .App{
   background-image: url('https://images.unsplash.com/photo-1552895638-f7fe08d2f7d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80');
   background-repeat: no-repeat;
-  /* background-position: left bottom; */
+  background-position: left bottom;
   background-attachment: fixed;
+  /* height:100vh; */
 }
 
 a{
