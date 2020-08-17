@@ -46,6 +46,10 @@ export default function Header(props) {
             <Link to="/foods">Foods</Link> 
             
             <Link to="/restaurants">Restaurants</Link>
+              
+            <Link to="/foods">Competitions</Link>
+          
+            
             <div className="notification">
               <div><Link to='/reviews'>Reviews</Link></div>
               <div className='badge'>3</div>

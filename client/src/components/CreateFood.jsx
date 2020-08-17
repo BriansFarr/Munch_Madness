@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { postFood } from '../services/foods';
+import { postFood, addRestaurant } from '../services/foods';
 import "../css/Create.css"
 
 export default function CreateFood(props) {
@@ -27,6 +27,7 @@ export default function CreateFood(props) {
   }
 
   return (
+    
     <div className="create">
     <form onSubmit={handleSubmit}>
       <h3>Create Food</h3>
@@ -60,6 +61,8 @@ export default function CreateFood(props) {
       
         <button>Submit</button>
       </form>
-      </div>
+      
+    </div>
+    
   )
 }

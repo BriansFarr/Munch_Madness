@@ -55,20 +55,7 @@ export default function FoodItem(props) {
               <img className="foodImage" src={food.image} ></img>}
             <div className="restBox"></div>
             <h3>Save to restaurant favorites:</h3>
-            
-            {food.restaurants &&
-              food.restaurants.map((restaurant) => (
-                <div>
-                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image} width={250} height={150} mode='fit'></img></p>
-                  
-                  {/* <button onCLick={handleClick}>Delete</button> */}
-                </div>
-              ))
-            }
-
-          
-              
-
+            <div className="selectRest">
             <form onSubmit={handleSubmit}>
               <select onChange={handleChange}>
                 <option selected disabled>-- Select a restaurant --</option>
@@ -76,12 +63,18 @@ export default function FoodItem(props) {
                   <option value={restaurant.id}>{restaurant.name}</option> 
                 ))}
               </select>
-              <button onClick>Add</button>
-              
-            </form>
+                <button onClick>Add</button>
+              </form>
+              </div>
             
+            <div className="foodImage">
+            {food.restaurants &&
+              food.restaurants.map((restaurant) => (
+                  <p key={restaurant.id}><img src={restaurant.image} width={250} height={150} mode='fit'></img></p>
+                  ))
+                }
+                </div>
           </>
-          
         )
       }
     </div>

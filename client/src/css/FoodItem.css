@@ -1,29 +1,50 @@
 .food{
   display: flex;
   flex-wrap: wrap;
-  /* height: 250px; */
-  align-self: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+
 
 }
 
 .foodImage{
   width: 250px;
   height: 250px;
+  align-self: center;
+
+
 }
 
 .foodBox{
-  width: 40%;
+  text-align: center;
+  /* border: solid red 2px; */
+  background-color: rgb(207, 25, 23, 0.4);
+  width: stretch;
+  
+  
 }
 
 .reviewBox{
-  width: 40%;
+  text-align: center;
+  /* border: solid red 2px; */
+  background-color: rgb(249, 249, 249 ,0.3);
 }
 
 .restBox{
-  width: 40%;
+
+  /* border: solid red 2px; */
+  background-color: rgba(230, 194, 34, 0.548);
 
 }
 form{
   margin-top: 10px;
+ 
 }
 
+.selectRest{
+  align-self: center;
+}
+.h3{
+  text-align: center;
+}
