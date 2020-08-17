@@ -1,20 +1,6 @@
-/* .img{
-  max-width: 300px;
-}
-
-.create{
-  display: flex;
-  justify-content: center;
-}
-
-.main{
-  display: flex;
-  justify-content: space-evenly;
-  height: 250px;
-} */
 
 .foodCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
   max-width: 300px;
   margin: auto;
   text-align: center;
@@ -22,16 +8,17 @@
 }
 
 .edit {
-  color: grey;
+  color: rgb(0, 0, 0);
   font-size: 22px;
+  text-align: center;
 }
 
 .delete button {
   border: none;
   outline: 0;
   padding: 12px;
-  color: white;
-  background-color: #000;
+  color: black;
+  background-color: #fcf1236b;
   text-align: center;
   cursor: pointer;
   width: 100%;
