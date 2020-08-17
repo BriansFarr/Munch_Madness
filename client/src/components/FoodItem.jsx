@@ -54,7 +54,7 @@ export default function FoodItem(props) {
             {food.image && 
               <img className="foodImage" src={food.image} ></img>}
             <div className="restBox"></div>
-            <h3>Select the restaurant with the best {food.name}:</h3>
+            <h3>Save to restaurant favorites:</h3>
             
             {food.restaurants &&
               food.restaurants.map((restaurant) => (

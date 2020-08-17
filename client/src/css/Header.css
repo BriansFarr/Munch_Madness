@@ -26,7 +26,7 @@ button {
 }
 
 .topnav {
-  background-color: #333;
+  background-color: #1959;
   overflow: hidden;
   padding-top: 10px;
 }
@@ -60,7 +60,7 @@ button {
 }
 
 .notification {
-  background-color: #555;
+  /* background-color: #1959; */
   color: white;
   text-decoration: none;
   /* padding: 15px 26px; */
@@ -76,7 +76,7 @@ button {
 
 .notification .badge {
   position: absolute;
-  top: -10px;
+  top: -1px;
   right: -10px;
   padding: 5px 10px;
   border-radius: 50%;
