@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { removeToken } from '../services/auth';
 import { useHistory } from 'react-router-dom';
 import '../css/Header.css'
+import munch from '../png/munch.png'
 
 export default function Header(props) {
   const history = useHistory();
@@ -17,7 +18,7 @@ export default function Header(props) {
   return (
     <header>
       <div className= "title">
-        <h1>Munch Madness</h1>
+    <img src={munch}></img>
       </div>
       <div className= 'user'>
       {
@@ -39,18 +40,20 @@ export default function Header(props) {
       <div className="topnav">
         {
         props.currentUser && (
-          <>
-          
+            <>
             <Link to='/home'>Home</Link>
            
             <Link to="/foods">Foods</Link> 
             
             <Link to="/restaurants">Restaurants</Link>
             
-      <div className="notification">
-      <span><Link to='/reviews'>Reviews</Link></span>
-        <span class='badge'>3</span>
-      </div>
+            <div className="notification">
+              <span><Link to='/reviews'>Reviews</Link></span>
+              <span class='badge'>3</span>
+            </div>
+              <div className="logo">
+                <img src={munch} height="50" ></img>
+                </div>
           </>
         )
         
