@@ -1,0 +1,9 @@
+.food{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.foodImage{
+  width: 250px;
+}

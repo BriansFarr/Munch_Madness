@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { readOneFood, addRestaurant } from '../services/foods'
 import { destroyRestaurants} from '../services/restaurants'
+import "../css/FoodItem.css"
+
+
 
 export default function FoodItem(props) {
   const [food, setFood] = useState(null);
@@ -35,17 +38,17 @@ export default function FoodItem(props) {
   }
 
   return (
-    <div>
+    <div className="food">
       {
         food && (
           <>
-            <header>Food:</header>
+            <h1>Food:</h1>
             <h2>{food.name}</h2>
             {food.review && 
               <p> Review: "{food.review}" </p>}
             {food.image && 
-              <img src={food.image}></img>}
-            <h2>Select the restaurant with the best {food.name}:</h2>
+              <img className="foodImage" src={food.image} ></img>}
+            <h3>Select the restaurant with the best {food.name}:</h3>
             
             {food.restaurants &&
               food.restaurants.map((restaurant) => (
