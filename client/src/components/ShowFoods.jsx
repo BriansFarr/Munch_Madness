@@ -21,7 +21,7 @@ export default function ShowFoods(props) {
         <Link to='/foods/new'><button>Create</button></Link>
       </div>
       {props.foods.map((foodItem) => (
-        <>
+      
           <div className="foodCard">
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
           <br/>
@@ -37,7 +37,7 @@ export default function ShowFoods(props) {
             <br />
             </div>
             </div>
-        </>
+        
         
       ))}
         </div>
