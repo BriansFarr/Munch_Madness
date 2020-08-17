@@ -25,7 +25,7 @@ export default function ShowFoods(props) {
           <div className="foodCard">
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
           <br/>
-          <img src= {foodItem.image} width={300} height={190} mode='fit'></img>
+          <img src= {foodItem.image} width={250} height={200} mode='fit'></img>
           <br />
             <div className="main">
               <div className="edit">

@@ -1,25 +1,28 @@
 .food{
   display: flex;
   flex-wrap: wrap;
-  height: 250px; 
+  /* height: 250px; */
 
 }
 
 .foodImage{
   width: 250px;
+  height: 250px;
 }
 
 .foodBox{
-  flex-basis: 30%;
+  width: 40%;
 }
 
 .reviewBox{
-  flex-basis: 30%;
+  width: 40%;
 }
 
 .restBox{
+  width: 40%;
 
 }
-.form{
-
+form{
+  margin-top: 10px;
 }
+

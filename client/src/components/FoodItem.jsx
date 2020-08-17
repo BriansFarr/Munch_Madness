@@ -47,12 +47,13 @@ export default function FoodItem(props) {
               <h2>{food.name}</h2>
             </div>
             <div className="reviewBox">
-            {food.review && 
-                <p> Review: "{food.review}" </p>}
+              <h1>Review:</h1>
+              {food.review && 
+                <p> "{food.review}" </p>}
               </div>
             {food.image && 
               <img className="foodImage" src={food.image} ></img>}
-            <div className="restBox">
+            <div className="restBox"></div>
             <h3>Select the restaurant with the best {food.name}:</h3>
             
             {food.restaurants &&
@@ -62,10 +63,8 @@ export default function FoodItem(props) {
                   
                   <button onCLick={handleClick}>Delete</button>
                 </div>
-                
               ))
-              }
-              </div>
+            }
 
           
               
