@@ -39,21 +39,18 @@ export default function Header(props) {
       </div>
       <div className="topnav">
         {
-        props.currentUser && (
+          props.currentUser && (
             <>
             <Link to='/home'>Home</Link>
            
             <Link to="/foods">Foods</Link> 
             
             <Link to="/restaurants">Restaurants</Link>
-            
             <div className="notification">
               <span><Link to='/reviews'>Reviews</Link></span>
               <span class='badge'>3</span>
             </div>
-              <div className="logo">
-                <img src={munch} height="50" ></img>
-                </div>
+            <div className="navLogo"><img src={munch} height="50" ></img></div>
           </>
         )
         

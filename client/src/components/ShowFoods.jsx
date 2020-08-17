@@ -22,13 +22,15 @@ export default function ShowFoods(props) {
       </div>
       {props.foods.map((foodItem) => (
         <>
-          <div className="foodcard">
+          <div className="foodCard">
           <Link to={`/foods/${foodItem.id}`} key={foodItem.id}>{foodItem.name}</Link>
           <br/>
           <img src= {foodItem.image} width={300} height={190} mode='fit'></img>
           <br />
-          <div className="edit">
-              <Link to={`/foods/${foodItem.id}/edit`}><button>edit</button></Link>
+            <div className="main">
+              <div className="edit">
+                <Link to={`/foods/${foodItem.id}/edit`}><button>edit</button></Link>
+                </div>
               <div className="delete">
                 <button onClick={() => handleClick(foodItem.id)}>delete</button>
                 </div>
