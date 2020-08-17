@@ -47,8 +47,8 @@ export default function Header(props) {
             
             <Link to="/restaurants">Restaurants</Link>
             <div className="notification">
-              <span><Link to='/reviews'>Reviews</Link></span>
-              <span class='badge'>3</span>
+              <div><Link to='/reviews'>Reviews</Link></div>
+              <div className='badge'>3</div>
             </div>
             <div className="navLogo"><img src={munch} height="50" ></img></div>
           </>

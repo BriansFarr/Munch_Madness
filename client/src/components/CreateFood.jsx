@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { postFood } from '../services/foods';
+import "../css/Create.css"
 
 export default function CreateFood(props) {
   const [formData, setFormData] = useState({
@@ -26,6 +27,7 @@ export default function CreateFood(props) {
   }
 
   return (
+    <div className="create">
     <form onSubmit={handleSubmit}>
       <h3>Create Food</h3>
       <label>
@@ -57,6 +59,7 @@ export default function CreateFood(props) {
       </label>
       
         <button>Submit</button>
-    </form>
+      </form>
+      </div>
   )
 }

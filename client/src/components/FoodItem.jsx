@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { readOneFood, addRestaurant } from '../services/foods'
-import { destroyRestaurants} from '../services/restaurants'
+// import { destroyRestaurants} from '../services/restaurants'
 import "../css/FoodItem.css"
 
 
@@ -32,10 +32,10 @@ export default function FoodItem(props) {
   }
 
 
-  const handleClick = async (e) => {
-    await destroyRestaurants();
+  // const handleClick = async (e) => {
+  //   await destroyRestaurants();
     
-  }
+  // }
 
   return (
     <div className="food">
@@ -59,9 +59,9 @@ export default function FoodItem(props) {
             {food.restaurants &&
               food.restaurants.map((restaurant) => (
                 <div>
-                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image} width={500} height={300} mode='fit'></img></p>
+                  <p key={restaurant.id}>{restaurant.name}<img src={restaurant.image} width={250} height={150} mode='fit'></img></p>
                   
-                  <button onCLick={handleClick}>Delete</button>
+                  {/* <button onCLick={handleClick}>Delete</button> */}
                 </div>
               ))
             }
@@ -73,8 +73,7 @@ export default function FoodItem(props) {
               <select onChange={handleChange}>
                 <option selected disabled>-- Select a restaurant --</option>
                 {props.restaurants.map((restaurant) => (
-                  <option value={restaurant.id}>{restaurant.name}</option>
-                  
+                  <option value={restaurant.id}>{restaurant.name}</option> 
                 ))}
               </select>
               <button onClick>Add</button>

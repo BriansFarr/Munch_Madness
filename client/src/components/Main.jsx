@@ -88,7 +88,7 @@ export default function Main(props) {
       )} />
       <Route path='/reviews' render={() => (
         <Reviews
-          reviews={Reviews}
+       
         />
       )} />
 
