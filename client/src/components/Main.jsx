@@ -12,6 +12,7 @@ import CreateFood from './CreateFood';
 import FoodItem from './FoodItem'
 import UpdateFood from './UpdateFood';
 import Home from './Home';
+import Reviews from './Reviews';
 
 export default function Main(props) {
   const { setCurrentUser } = props;
@@ -83,6 +84,11 @@ export default function Main(props) {
           {...props}
           foods={foods}
           setFoods={setFoods}
+        />
+      )} />
+      <Route path='/reviews' render={() => (
+        <Reviews
+          reviews={Reviews}
         />
       )} />
 

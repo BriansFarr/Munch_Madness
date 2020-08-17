@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
   put '/restaurants/:restaurant_id/foods/:id', to: 'foods#add_restaurant'
+  delete '/restaurants/:restaurant_id/foods/:id', to: 'foods#destroy_restaurant'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

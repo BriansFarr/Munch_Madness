@@ -11,7 +11,7 @@ export default function Header(props) {
     props.setCurrentUser(null);
     localStorage.removeItem("authToken");
     removeToken();
-    history.push('/');
+    history.push('/home');
   }
 
   return (
@@ -22,8 +22,10 @@ export default function Header(props) {
       <div className= 'user'>
       {
         props.currentUser ? (
-          <>
-              <p>{props.currentUser.username}</p>
+            <>
+              <div className="menuUser">
+                <p>{props.currentUser.username}</p>
+                </div>
               <div className='button'>
                 <button onClick={handleLogout}>Logout</button>
                 </div>
@@ -34,7 +36,7 @@ export default function Header(props) {
           )
       }
       </div>
-      <div className="nav">
+      <div className="topnav">
         {
         props.currentUser && (
           <>
@@ -42,12 +44,18 @@ export default function Header(props) {
             <Link to='/home'>Home</Link>
            
             <Link to="/foods">Foods</Link> 
-       
+            
             <Link to="/restaurants">Restaurants</Link>
+            
+      <div className="notification">
+      <span><Link to='/reviews'>Reviews</Link></span>
+        <span class='badge'>3</span>
+      </div>
           </>
         )
+        
         }
-        </div>
+      </div>
     </header>
   )
 }

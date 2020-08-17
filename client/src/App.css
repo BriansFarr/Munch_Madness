@@ -1,9 +1,15 @@
 .App {
   /* text-align: center; */
   min-height: 100%;
-  
 }
 
 
+Header{
+margin-top: 0px;
+}
 
 
+Footer{
+  height: 50px;
+  margin-top: -50px;
+}
