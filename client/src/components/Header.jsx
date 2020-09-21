@@ -37,7 +37,7 @@ export default function Header(props) {
           )
       }
       </div>
-      <div className="topnav">
+      <div className="topNav">
         {
           props.currentUser && (
             <>
@@ -47,12 +47,12 @@ export default function Header(props) {
             
             <Link to="/restaurants">Restaurants</Link>
               
-            <Link to="/foods">Competitions</Link>
+            <Link to="/reviews">Reviews</Link>
           
             
             <div className="notification">
-              <div><Link to='/reviews'>Reviews</Link></div>
-              <div className='badge'>3</div>
+              <div><Link to='/comp'>Competitions</Link></div>
+              <div className='badge'>4</div>
             </div>
             <div className="navLogo"><img src={munch} height="50" ></img></div>
           </>

@@ -23,7 +23,8 @@ export default function Login(props) {
       <h3>Login</h3>
       <input type='text' name='username' value={formData.username} onChange={handleChange} />
       <br/>
-      <input type='text' name='password' value={formData.password} onChange={handleChange}/>
+        <input type='text' name='password' value={formData.password} onChange={handleChange} />
+        <br/>
       <Link to='/register'>Register</Link>
       <button>Submit</button>
       </div>

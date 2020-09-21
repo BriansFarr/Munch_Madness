@@ -22,7 +22,7 @@ export default function Register(props) {
     e.preventDefault();
     const userData = await registerUser(formData);
     props.setCurrentUser(userData);
-    props.history.push('/');
+    props.history.push('/home');
   }
 
   return (
@@ -30,25 +30,30 @@ export default function Register(props) {
       <div className="Register">
       <h3>Register</h3>
       <label>
-        Username:
+          Username:
+             <br/>
         <input
           type="text"
           name="username"
           value={formData.username}
           onChange={handleChange}
-        />
+          />
+          <br/>
       </label>
       <label>
-        Email:
+          Email:
+             <br/>
         <input
           type="text"
           name="email"
           value={formData.email}
           onChange={handleChange}
         />
-      </label>
+        </label>
+        <br/>
       <label>
-        Password:
+          Password:
+             <br/>
         <input
           type="password"
           name="password"

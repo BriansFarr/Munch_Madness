@@ -13,6 +13,9 @@ import FoodItem from './FoodItem'
 import UpdateFood from './UpdateFood';
 import Home from './Home';
 import Reviews from './Reviews';
+import Comp from './Comp'
+
+
 
 export default function Main(props) {
   const { setCurrentUser } = props;
@@ -91,6 +94,13 @@ export default function Main(props) {
        
         />
       )} />
+
+      <Route path='/comp' render={() => (
+        <Comp
+       
+        />
+      )} />
+      
 
       
     </main>

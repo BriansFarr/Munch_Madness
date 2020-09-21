@@ -11,8 +11,10 @@ export default function ShowRestaurants(props) {
           <div className="restInfo">
         {/* <p>{restaurant.name}</p> */}
             <img src={restaurant.image} width={250} height={175} mode='fit'></img>
-            <br/>
-            <button>Menu</button><button>Favorites</button><button>Order Now</button>
+            <br />
+            <div className="link-btn">
+              <a href="https://www.bk.com/menu"> Menu</a> <button>Favorites</button><button>Order Now</button>
+              </div>
           </div>
           </>
       ))}

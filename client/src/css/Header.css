@@ -25,45 +25,38 @@ button {
   display: flex;
 }
 
-.topnav {
+.topNav {
   background-color: #1959;
   overflow: hidden;
   padding-top: 10px;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+
+.topNav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
+
+.topNav a:hover {
   background-color: rgb(252, 241, 35);
   color: black;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
+
+.topNav a.active {
   background-color: #4CAF50;
   color: white;
 }
 
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
 .notification {
-  /* background-color: #1959; */
   color: white;
   text-decoration: none;
-  /* padding: 15px 26px; */
   position: relative;
   display: inline-block;
   border-radius: 2px;
@@ -95,3 +88,6 @@ button {
   padding-right: 50px;
  
 }
+
+
+

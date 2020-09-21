@@ -43,8 +43,7 @@ export default function FoodItem(props) {
         food && (
           <>
             <div className="foodBox">
-            <h2>Food:</h2>
-              <h3>{food.name}</h3>
+              <h1>{food.name}</h1>
             </div>
             <div className="reviewBox">
               <h2>Review:</h2>
